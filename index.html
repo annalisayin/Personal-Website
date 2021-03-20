@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Annalisa's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Annalisa Yin</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#trip" onclick="toggleMenu();">Photography</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class ="banner" id ="home">
+        <div class="textbx">
+            <h1>Hello! My name is<br><span>Annalisa Yin.</span></h2>
+            <h2>I am a first year computer science student at the University of Waterloo.</h2>
+            <a href="#about" class="btn"> About Me</a>
+        </div>
+    </section>
+    <section class="about" id ="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <p> My name is Annalisa Yin and I am a first year computer science student at the University of Waterloo. 
+                    I am a Chinese - American who is currently living in Canada. I was born in Chicago, Illinois but don't really 
+                    remember much of my life there. Being a big city definitely has its perks, ranging from The Bean to the
+                    beautiful skyline to the Chicago pizza, there's an endless amount of things to do. I highly recommend to 
+                    visit Chicago whenever you guys get a chance! <br>
+                    Ottawa (the capital of Canada), where I currently live, is a smaller city full of harsh winters 
+                    but warm people. The Rideau Canal (for annual skating trips), Beavertails, poutine, and the Parliament, 
+                    I have no complaints about this wonderful city. <br>
+                    I always enjoy trying new things and expanding the number of hobbies I have. I love playing basketball, 
+                    the guitar, and editing videos.<br>
+                    I am a Christian and have spent a lot of my time volunteering at my church leading bible studies and 
+                    childrens summer camps.<br>
+                </p>
+            </div>
+            <div class="w50">
+                <img src="images/profile.jpg" class="img">
+            </div>
+        </div>
+    </section>
+
+    <section class="trip" id="trip">
+        <div class="heading black">
+            <h2>Europe Trip 2020</h2>
+            <p>Some photograpy pictures taken during my backpacking trip in Europe in the Summer of 2020</p>
+        </div>
+        <div class="content">
+            <div class="tripBx">
+                <img src="images/pic1.jpeg">
+            </div>
+            <div class="tripBx">
+                <img src="images/pic2.JPG">
+            </div>
+            <div class="tripBx">
+                <img src="images/pic3.JPG">
+            </div>
+            <div class="tripBx">
+                <img src="images/pic4.jpeg">
+            </div>
+            <div class="tripBx">
+                <img src="images/pic5.jpeg">
+            </div>
+            <div class="tripBx">
+                <img src="images/pic6.jpeg">
+            </div>
+            <div class="tripBx">
+                <img src="images/pic7.JPG">
+            </div>
+            <div class="tripBx">
+                <img src="images/pic8.jpeg">
+            </div>
+            <div class="tripBx">
+                <img src="images/pic9.JPG">
+            </div>
+            <div class="tripBx">
+                <img src="images/pic10.jpeg">
+            </div>
+            <div class="tripBx">
+                <img src="images/pic11.JPG">
+            </div>
+            <div class="tripBx">
+                <img src="images/pic.jpeg">
+            </div>
+            <div class="tripBx">
+                <img src="images/pic12.jpeg">
+            </div>
+            <div class="tripBx">
+                <img src="images/pic14.JPG">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfoBox">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon"></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p> a4yin@uwaterloo.ca</p>
+                    </div>
+                    <div class="box">
+                        <div class="icon"></div>
+                    <div class="text">
+                        <h3>LinkedIn</h3>
+                        <p>annalisayin</p>
+                    </div>
+                    <div class="box">
+                        <div class="icon"></div>
+                    <div class="text">
+                        <h3>Github</h3>
+                        <p> annalisayin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        menuToggle.classList.toggle('active');
+        var menu = document.querySelector('.menu');
+        menuToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+    </script>
+</body>
+</html> 
