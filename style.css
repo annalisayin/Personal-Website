@@ -297,9 +297,15 @@ img
         width: 100%;
         padding: 10px;
     }
-    .contactInfo
+    .contactInfoBox
     {
         margin: 20px 0;
+        position: relative;
+        background-size: cover;
+        background-position: right;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
