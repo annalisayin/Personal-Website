@@ -33,7 +33,9 @@ section
     color:#111;
     font-weight: 500;
     line-height: 1.5em;
+    animation: slideMe .7s ease-in;
 }
+
 
 .banner h1 span 
 {
@@ -46,7 +48,9 @@ section
     font-weight: 500;
     font-size: 1.5em;
     color: black;
+    animation: slideMe .7s ease-in;
 }
+
 
 .btn
 {
@@ -61,6 +65,16 @@ section
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 500;
+    animation: slideMe .7s ease-in;
+}
+
+@keyframes slideMe{
+    0%{
+        transform: skewX(53deg) translateX(-500px);
+    }
+    100%{
+        transform: skew(0deg);
+    }
 }
 
 header
