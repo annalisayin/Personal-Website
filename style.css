@@ -346,3 +346,39 @@ img
     font-size: 0;
     line-height: 0
 }
+
+.project-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust as needed */
+}
+
+.project-imgs img {
+    width: calc(25% - 10px); /* Adjust width based on number of images per row and gap */
+    height: auto;
+}
+
+.contact {
+    background-color: #f2f2f2; /* Adjust background color as needed */
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center; /* Center align content horizontally */
+
+    /* Fixed positioning at the bottom of the page */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact .content {
+    display: flex;
+    justify-content: center; /* Center align flex items horizontally */
+}
+
+.contact .icons {
+    display: flex;
+    justify-content: center; /* Center align icons horizontally */
+}
+
+.contact .icons > div {
+    margin: 0 10px; /* Adjust spacing between icons */
+}
